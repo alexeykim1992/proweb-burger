@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="media/media.css">
     <title>Burger</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container mh-100 d-flex flex-column header__container">
@@ -24,7 +26,10 @@
             <div class="header__content flex-grow-1 row flex-column justify-content-center">
                 <h1 class="header__title col-9">Большой гамбургер</h1>
                 <h2 class="header__underTitle col-2">говядина</h2>
-                <p class="header__description col-12">Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета, сдобренная майонезом и кетчупом, - таков классический портрет гамбургера, наиболее распространенной «быстрой» еды в США, от отравления которой ежедневно на больничных койках оказываются десятки тысяч американцев</p>
+                <p class="header__description col-12">Свежая хрустящая булочка, листики салата, маринованный огурец с
+                    луком и небольшая котлета, сдобренная майонезом и кетчупом, - таков классический портрет гамбургера,
+                    наиболее распространенной «быстрой» еды в США, от отравления которой ежедневно на больничных койках
+                    оказываются десятки тысяч американцев</p>
                 <p class="header__price col-4">14 500</p>
             </div>
         </div>
@@ -34,72 +39,84 @@
         <div id="menu" class="main-menu">
             <div class="container">
                 <ul class="main-menu__list d-flex">
+                    <li class="main-menu__cart-container">
+                        <a href="" class="main-menu__list_link main-menu__cart-btn">Корзина</a>
+                        <div class="main-menu__cart-panel">
+                            Пусто
+                        </div>
+                    </li>
                     <li><a href="" class="main-menu__list_link">Гамбургеры</a></li>
                     <li><a href="" class="main-menu__list_link">Хот-доги</a></li>
                     <li><a href="" class="main-menu__list_link">Пицца</a></li>
                     <li><a href="" class="main-menu__list_link">Напитки</a></li>
                     <li><a href="" class="main-menu__list_link">Соки</a></li>
                 </ul>
-                
+
                 <div class="main-cards d-flex flex-wrap">
-                    <div class="card col-4">
+                    <div class="card col-4" data-type="beef200">
                         <div class="card__content">
                             <a href="" class="card__content_add">Добавить в корзину</a>
-                            <p class="card__content_price">14 500</p>
+                            <p class="card__content_price">15 000</p>
                             <img src="img/item_photo.png" class="card__content_img" alt="">
                         </div>
-                        <h3 class="card__title">С говядиной</h3>
-                        <p class="card__description">Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
+                        <h3 class="card__title">С говядиной 200gr</h3>
+                        <p class="card__description">Свежая хрустящая булочка, листики салата, маринованный огурец с
+                            луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
                     </div>
 
-                    <div class="card col-4">
+                    <div class="card col-4" data-type="beef250">
                         <div class="card__content">
                             <a href="" class="card__content_add">Добавить в корзину</a>
-                            <p class="card__content_price">14 500</p>
+                            <p class="card__content_price">18 000</p>
                             <img src="img/item_photo.png" alt="">
                         </div>
-                        <h3 class="card__title">С говядиной</h3>
-                        <p class="card__description">Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
+                        <h3 class="card__title">С говядиной 250gr</h3>
+                        <p class="card__description">Свежая хрустящая булочка, листики салата, маринованный огурец с
+                            луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
                     </div>
 
-                    <div class="card col-4">
+                    <div class="card col-4" data-type="beef300">
                         <div class="card__content">
                             <a href="" class="card__content_add">Добавить в корзину</a>
-                            <p class="card__content_price">14 500</p>
+                            <p class="card__content_price">21 000</p>
                             <img src="img/item_photo.png" alt="">
                         </div>
-                        <h3 class="card__title">С говядиной</h3>
-                        <p class="card__description">Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
+                        <h3 class="card__title">С говядиной 300gr</h3>
+                        <p class="card__description">Свежая хрустящая булочка, листики салата, маринованный огурец с
+                            луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
                     </div>
 
-                    <div class="card col-4">
+                    <div class="card col-4" data-type="chicken200">
                         <div class="card__content">
                             <a href="" class="card__content_add">Добавить в корзину</a>
-                            <p class="card__content_price">14 500</p>
+                            <p class="card__content_price">14 000</p>
                             <img src="img/item_photo.png" alt="">
                         </div>
-                        <h3 class="card__title">С говядиной</h3>
-                        <p class="card__description">Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
+                        <h3 class="card__title">С курицей 200gr</h3>
+                        <p class="card__description">Свежая хрустящая булочка, листики салата, маринованный огурец с
+                            луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
                     </div>
 
-                    <div class="card col-4">
+                    <div class="card col-4" data-type="chicken250">
                         <div class="card__content">
                             <a href="" class="card__content_add">Добавить в корзину</a>
-                            <p class="card__content_price">14 500</p>
+                            <p class="card__content_price">16 000</p>
                             <img src="img/item_photo.png" alt="">
                         </div>
-                        <h3 class="card__title">С говядиной</h3>
-                        <p class="card__description">Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
+                        <h3 class="card__title">С курицей 250gr</h3>
+                        <p class="card__description">Свежая хрустящая булочка, листики салата, маринованный огурец с
+                            луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
                     </div>
 
-                    <div class="card col-4">
+                    <div class="card col-4" data-type="chicken300">
                         <div class="card__content">
                             <a href="" class="card__content_add">Добавить в корзину</a>
-                            <p class="card__content_price">14 500</p>
+                            <p class="card__content_price">19 000</p>
                             <img src="img/item_photo.png" alt="">
                         </div>
-                        <h3 class="card__title">С говядиной</h3>
-                        <p class="card__description">Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
+                        <h3 class="card__title">С курицей 300gr</h3>
+                        <p class="card__description">Свежая хрустящая булочка, листики салата, маринованный огурец с
+                            луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
                     </div>
                 </div>
             </div>
@@ -107,15 +124,30 @@
 
         <section id="about" class="receipt">
             <div class="container">
-                <h2 class="receipt__title">Уникальная рецептура</h2>            
-                <p class="receipt__description">Гамбургер является разновидностью сэндвича, состоящей из жареной рубленой котлеты, что подается внутри разрезанной круглой булки. Он обычно дополняется разнообразными приправами, к примеру, листьями салата, кетчупом и майонезом, дольками маринованного огурца, помидора или кабачка, сырым или поджаренным луком.</p>
-                <p class="receipt__description">Будучи наиболее распространенной «быстрой» едой в США, гамбургер имеет далеко не американское происхождение. Ученые приписывают его авторство кочевникам-скифам, которые клали обжаренное мясо между двумя хлебными ломтиками. А в Новый свет «король» фаст-фуда приехал вместе с немецкими иммигрантами: его назвали, кстати, в честь Гамбурга, второго по масштабам города Германии. Официальной датой продажи первого гамбургера в США считается 27 июля 1900-го - в этот день гастроном из Нью-Хейвена предложил жителям города покупать приправленную кетчупом котлету, «зажатую» между двумя кусками булки. Изначально такая еда была прерогативой бедных слоев населения, но вскоре по всей стране стали открываться «фаст-фудовые» заведения, в которых, быстрым было не только питание, но и обслуживание, и смена клиентов. Эти общепиты взяли курс на оперативное детское питание - и для всегда занятого рабочего класса на тот момент они стали лучшим решением проблемы, где и чем быстро накормить детей.</p>
+                <h2 class="receipt__title">Уникальная рецептура</h2>
+                <p class="receipt__description">Гамбургер является разновидностью сэндвича, состоящей из жареной
+                    рубленой котлеты, что подается внутри разрезанной круглой булки. Он обычно дополняется
+                    разнообразными приправами, к примеру, листьями салата, кетчупом и майонезом, дольками маринованного
+                    огурца, помидора или кабачка, сырым или поджаренным луком.</p>
+                <p class="receipt__description">Будучи наиболее распространенной «быстрой» едой в США, гамбургер имеет
+                    далеко не американское происхождение. Ученые приписывают его авторство кочевникам-скифам, которые
+                    клали обжаренное мясо между двумя хлебными ломтиками. А в Новый свет «король» фаст-фуда приехал
+                    вместе с немецкими иммигрантами: его назвали, кстати, в честь Гамбурга, второго по масштабам города
+                    Германии. Официальной датой продажи первого гамбургера в США считается 27 июля 1900-го - в этот день
+                    гастроном из Нью-Хейвена предложил жителям города покупать приправленную кетчупом котлету, «зажатую»
+                    между двумя кусками булки. Изначально такая еда была прерогативой бедных слоев населения, но вскоре
+                    по всей стране стали открываться «фаст-фудовые» заведения, в которых, быстрым было не только
+                    питание, но и обслуживание, и смена клиентов. Эти общепиты взяли курс на оперативное детское питание
+                    - и для всегда занятого рабочего класса на тот момент они стали лучшим решением проблемы, где и чем
+                    быстро накормить детей.</p>
             </div>
         </section>
 
         <section class="branches">
             <h2 class="branches__title">Наши филиалы</h2>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23973.395342827924!2d69.24316687953642!3d41.31594597330876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef4d376395311%3A0x2f977e6f6b98ad7!2sStreet77!5e0!3m2!1sru!2s!4v1606062671015!5m2!1sru!2s" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23973.395342827924!2d69.24316687953642!3d41.31594597330876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef4d376395311%3A0x2f977e6f6b98ad7!2sStreet77!5e0!3m2!1sru!2s!4v1606062671015!5m2!1sru!2s"
+                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
     </main>
 
@@ -136,5 +168,8 @@
             <p class="footer__description">Сайт разработан в целях обучения © PROWEB 2019</p>
         </div>
     </footer>
+
+    <script src="script/script.js"></script>
 </body>
+
 </html>

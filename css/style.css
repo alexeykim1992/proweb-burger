@@ -280,6 +280,22 @@ html, body{
     color: var(--green);
 }
 
+.main-menu__cart-container{
+    position: relative;
+}
+
+.main-menu__cart-panel{
+    display: none;
+    position: absolute;
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    background: cyan;
+    left: 0;
+    top: calc(100% + 10px);
+    z-index: 10;
+}
+
 .card__title {
     font-size: 24px;
     color: var(--green);
