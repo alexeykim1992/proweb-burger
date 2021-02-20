@@ -20,15 +20,28 @@ const cart = {
             }
         })
     },
-    
+
     repaint: () => {
         if (cart.orderList.length > 0) {
             let content = '';
             for (let i = 0; i < cart.orderList.length; i++) {
-                content += `<div>${cart.orderList[i]}</div>`;
+                content +=
+                    `<div class="cart-panel__item" data-itemID="${i}">
+                        ${cart.orderList[i]}
+                        <img src="img/deleteBtn.png" class="cart-panel__item_delete" alt="">
+                    </div>`;
             }
             cart.panel.innerHTML = content;
-            console.log(content);
+            let cart_items = document.querySelectorAll('.cart-panel__item_delete');
+            // console.log(cart_items);
+            for (let i = 0; i < cart_items.length; i++) {
+                cart_items[i].addEventListener('click', () => {
+                    let id = cart_items[i].closest('.cart-panel__item').getAttribute('data-itemID');
+                    cart.orderList.splice(id, 1);
+                    cart.repaint();
+                });
+            }
+            // console.log(content);
         } else {
             cart.panel.innerHTML = 'Пусто';
         }
@@ -44,7 +57,6 @@ for (let i = 0; i < burgerAddButtons.length; i++) {
 
         cart.orderList.push(type);
         cart.repaint();
-        console.log(cart.orderList);
     });
 }
 

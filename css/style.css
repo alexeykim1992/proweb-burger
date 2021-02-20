@@ -296,6 +296,17 @@ html, body{
     z-index: 10;
 }
 
+.cart-panel__item_delete{
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.cart-panel__item{
+    display: flex;
+    align-items: center;
+}
+
 .card__title {
     font-size: 24px;
     color: var(--green);
